@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	
             this.submit();
 		alert('Su turno se ha reservado correctamente. Muchas gracias.');	
-        }
+        				}

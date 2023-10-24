@@ -10,7 +10,8 @@ body {
 }
 
 .imagen{
-	margin-left:40%;
+	margin-left:20%;
+
 	}
 
 header {
@@ -131,7 +132,38 @@ article input{
 iframe{
 	display:flex;
 	width:60%;
-	height:100%;
-	margin-left: 20%;
-	margin-top: 10%;
+	height:350px;
+	margin-left:20%;
+	margin-top:3%;
+	}
+
+svg:hover{
+	transform: rotate(-30deg);
+	}
+
+table{
+	margin-left: 15%;
+	}
+
+table img:hover{
+	transform: scale(3,3);
+	}
+
+table td{
+	background-color:white;
+	align-items:center;
+	padding: 5px;
+	margin:3px;
+	text-align:center;
+	font-family:Roboto;
+	font-size:15px;
+	text-color:blue;
+	}
+
+section img{
+	display:flex;
+	align-items:center;
+	width:auto;
+	background-color:red;
+	justify-content:space-between;
 	}
