@@ -31,3 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
             this.submit();
 		alert('Su turno se ha reservado correctamente. Muchas gracias.');	
         				}
+
+
+function traer() {
+fetch	('http://worldtimeapi.org/api/timezone/America/Argentina/Salta')
+.then(res => res.json())
+.then(res => {
+console.log(res)
+contenido.innerHTML= `<p>Fecha (AAAA-MM-DD) / horario / zona horaria actual: ${res.datetime}</p>`
+})
+}
