@@ -14,12 +14,6 @@ body {
 	font-family: "Frijole";
 }
 
-
-.imagen{
-	margin-left:20%;
-
-	}
-
 .imagen {
 	margin-left: 40%;
 }
@@ -32,12 +26,17 @@ header {
 	align-items: center;
 	padding: 11px;
 	font-size: 25px;
+	background-size: cover;
 }
 
 .menu {
 	display: flex;
 	align-items: center;
+
 }
+
+
+
 
 
 .menu img {
@@ -170,49 +169,6 @@ article input {
 
 .diseñoinput {
 	background: #abd1d1;
-
-	width:auto;
-	color:#fcffff;
-	}
-iframe{
-	display:flex;
-	width:60%;
-	height:350px;
-	margin-left:20%;
-	margin-top:3%;
-	}
-
-svg:hover{
-	transform: rotate(-30deg);
-	}
-
-table{
-	margin-left: 15%;
-	}
-
-table img:hover{
-	transform: scale(3,3);
-	}
-
-table td{
-	background-color:white;
-	align-items:center;
-	padding: 5px;
-	margin:3px;
-	text-align:center;
-	font-family:Roboto;
-	font-size:15px;
-	text-color:blue;
-	}
-
-section img{
-	display:flex;
-	align-items:center;
-	width:auto;
-	background-color:red;
-	justify-content:space-between;
-	}
-
 	width: auto;
 	color: #fcffff;
 }
@@ -235,6 +191,7 @@ h4 {
 	align-items: center;
 	justify-content: center;
 	margin-top: 10%;
+
 }
 
 h2 {
@@ -267,3 +224,24 @@ img {
 	height: 100%;
 }
 
+.imagen {
+	font-size: 30px;
+	margin-top: 12px;
+}
+
+.imagen td {
+	display: block;
+	padding-top: 20px;
+	width: 150%;
+
+}
+
+.time {
+	display: flexbox;
+	padding-top: 10%;
+	font-size: 20px;
+	width: 100%;
+	margin-left: 0.1px;
+	position: relative;
+
+}
