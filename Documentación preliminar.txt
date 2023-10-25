@@ -20,6 +20,7 @@
 
 - Descripción del proyecto (detallando cómo se han abordado los diferentes aspectos del desarrollo)
 
-	- La API gráfica utilizada despliega un diagrama de pronóstico de clima, se denomina: 7Timer! - https://www.7timer.info/doc.php?lang=en 
+	- API gráfica utilizada despliega un diagrama de pronóstico de clima, se denomina: 7Timer! - https://www.7timer.info/doc.php?lang=en 
+	- API utilizada para obtener la fecha y hora actual: WordTimeAPI - https://worldtimeapi.org/
 
 Las pautas y especificaciones detalladas para este punto serán proporcionadas en un documento aparte para asegurar una presentación consistente y adecuada de la documentación.
