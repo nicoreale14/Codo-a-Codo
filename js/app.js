@@ -37,9 +37,3 @@ function validarDatos(evento) {
   this.submit();
   alert("Su turno se ha reservado correctamente. Muchas gracias.");
 }
-
-const nav = document.querySelector("nav");
-
-window.addEventListener("scroll", function () {
-  nav.classList.toggle("active", this.window.scrollY > 0);
-});
