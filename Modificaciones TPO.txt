@@ -1,0 +1,7 @@
+- Index: iframe
+
+- Turnos: Movimiento logo SVG
+
+- Contacto: Logos redes sociales
+
+- Todas las secciones: Footer

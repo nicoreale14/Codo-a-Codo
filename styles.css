@@ -191,26 +191,22 @@ h2 {
   margin-top: 5%;
 }
 
+h2 a{
+	width: 30%;
+	height: 30%;
+	}
+
 img {
   margin-left: -12%;
 }
 
-.iframe-content {
-  position: relative;
-  padding-bottom: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin-top: 40px;
-  margin-right: 70%;
-}
-
-.iframe-content iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+iframe{
+  	display:flex;
+	background: #abd1d1;
+	width:70%;
+	heigth:20%;
+	margin-left:15%;
+  	}
 
 .imagen {
   font-size: 30px;
@@ -237,7 +233,7 @@ img {
   padding-top: 20px;
   width: auto;
   position: relative;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 h4 {
@@ -245,3 +241,14 @@ h4 {
   text-align: justify;
   padding: 20px;
 }
+
+svg:hover{
+	transform: rotate(-30deg);
+	}
+
+table{
+	margin-left: 10%;
+	}
+footer{
+	text-align: center;
+	}
