@@ -1,0 +1,26 @@
+- Planificación 
+	 Se acuerda la temática del proyecto y se delinean las áreas a desarrollar posteriormente.
+
+- Organización
+	Las tareas se distribuyen en común acuerdo entre los integrantes del equipo.
+	Se planifica desarrollar las ditintas secciones de forma equitativa, acordando cuáles creará cada integrante.
+	Se pautan puntos de control en función de los avances realizados.
+	Se incoproran los nuevos contenidos mediante el uso de un repoesitorio web.
+ 
+- Objetivo 
+	Se plantea crear un sito web para una empresa de lavado de vehículos, el mismo contendrá las siguientes secciones:
+	
+	- Inicio; portada del sitio, la cual proporciona la presentación de la empresa.
+	
+	- Servicios; describe e indica lo que ofrece la organización.
+	
+	- Turnos; permite solicitar turnos mediante el uso de un formulario.
+	
+	- Nosotros; presenta contenidos complementarios de la institución.
+
+- Descripción del proyecto (detallando cómo se han abordado los diferentes aspectos del desarrollo)
+
+	- API gráfica utilizada despliega un diagrama de pronóstico de clima, se denomina: 7Timer! - https://www.7timer.info/doc.php?lang=en 
+	- API utilizada para obtener la fecha y hora actual: WordTimeAPI - https://worldtimeapi.org/
+
+Las pautas y especificaciones detalladas para este punto serán proporcionadas en un documento aparte para asegurar una presentación consistente y adecuada de la documentación.
