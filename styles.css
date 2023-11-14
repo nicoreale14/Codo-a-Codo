@@ -17,6 +17,12 @@ body {
   margin-left: 40%;
 }
 
+table td{
+	display:flex;
+	width:2%;
+	margin-left:80%;
+	}
+
 header {
   display: flex;
   min-height: 125px;
@@ -176,24 +182,32 @@ h1 {
 }
 
 h4 {
-  color: rgb(23, 37, 82);
-
-  margin-top: 10%;
+	color: rgb(23, 37, 82);
+	margin-top: 10%;
+	padding: 2%;
 }
 
 h2 {
-  color: rgb(23, 37, 82);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2px;
-  margin-top: 5%;
+	color: rgb(23, 37, 82);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2px;
+	margin-top: 5%;
+	padding:2%;
+	text-align: center;
 }
 
-h2 a{
-	width: 30%;
-	height: 30%;
+h2 a	{
+	width:5%;
+	padding:5%;
+	}
+
+.imagen	{
+	display: flex;
+	margin-left:1%;
+	
 	}
 
 img {
@@ -204,7 +218,6 @@ iframe{
   	display:flex;
 	background: #abd1d1;
 	width:70%;
-	heigth:20%;
 	margin-left:15%;
   	}
 
@@ -220,12 +233,13 @@ iframe{
 }
 
 .time {
-  display: flexbox;
-  padding-top: 10%;
-  font-size: 20px;
-  width: 100%;
-  margin-left: 0.1px;
+  padding:2%;
+  display:block;
+  padding-top:10%;
+  width:60%;
+  margin-left:20%;
   position: relative;
+  text-align: center;
 }
 
 .inicioimg {
@@ -239,16 +253,29 @@ iframe{
 h4 {
   justify-content: center;
   text-align: justify;
-  padding: 20px;
+  padding: 5px;
 }
 
 svg:hover{
 	transform: rotate(-30deg);
 	}
 
-table{
-	margin-left: 10%;
+table N	{
+	display:flex;
+	margin-left: 15%;
+	width:100%;
 	}
-footer{
+
+footer	{
 	text-align: center;
+	}
+
+div img	{
+	display:flex;
+	justify-content: center;
+	width:60%;
+	padding:1%;
+	margin-left:20%;
+	margin-top:10%;	
+	background: #abd1d1;
 	}
