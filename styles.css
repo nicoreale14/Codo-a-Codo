@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #ffffff;
+  background: #f5f5f5;
   font-family: "Frijole";
 }
 
@@ -27,7 +27,7 @@ header {
   display: flex;
   min-height: 125px;
   justify-content: space-between;
-  background-color: #5993ba;
+  background-color: #26272b;
   align-items: center;
   padding: 11px;
   font-size: 25px;
@@ -46,16 +46,19 @@ header {
 
 a {
   text-decoration: none;
-  color: rgb(23, 37, 82);
+  color: rgb(255, 255, 255);
 }
 
 nav a {
   font-weight: 600;
   padding-right: 15px;
+
 }
 
+
+
 nav a:hover {
-  color: white;
+  color: rgb(171, 171, 171);
 }
 
 @media (max-width: 700px) {
@@ -110,7 +113,7 @@ nav ul li a {
 .contenido {
   border: 0px solid rgb(0, 0, 0);
   margin-left: 10%;
-  background: #fcffff;
+  background: #e1e1e1;
   padding: 3%;
   margin-top: 3%;
   width: 500px;
@@ -164,31 +167,31 @@ article input {
 }
 
 .diseñoinput {
-  background: #abd1d1;
+  background: #b3b3b3;
   width: auto;
   color: #fcffff;
 }
 
 h1 {
-  color: rgb(23, 37, 82);
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 10%;
   padding: 2%;
-  background-color: #9acef1;
+
   text-align: center;
 }
 
 h4 {
-  color: rgb(23, 37, 82);
+  color: rgb(0, 0, 0);
   margin-top: 10%;
   padding: 2%;
 }
 
 h2 {
-  color: rgb(23, 37, 82);
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +219,7 @@ img {
 
 iframe {
   display: flex;
-  background: #abd1d1;
+  background: #000000;
   width: 70%;
   margin-left: 15%;
 }
@@ -269,24 +272,12 @@ table N {
 
 footer {
   text-align: center;
-  background-color: #9acef1;
-  text-align: center;
-
-
-}
-
-.pie {
-  position: relative;
-
-}
-
-.pie1 {
-  position: relative;
-
 
 
 
 }
+
+
 
 div img {
   display: flex;
@@ -295,20 +286,24 @@ div img {
   padding: 1%;
   margin-left: 20%;
   margin-top: 10%;
-  background: #abd1d1;
+  background: #000000;
 }
 
 .servicio1 {
+  color: #000000;
   text-align: center;
   padding-top: 10%;
   padding-bottom: 10%;
-
+  font-size: 40px;
+  background-color: #000000;
 }
 
-h3 {
-  border: 5px solid #9acef1;
-
+.servicio1:hover {
+  color: #737373;
 }
+
+
+
 
 .imagencontac {
   display: flex;
@@ -346,7 +341,7 @@ h3 {
 }
 
 .site-footer a:hover {
-  color: #3366cc;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -366,7 +361,7 @@ h3 {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: #3366cc;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -407,4 +402,8 @@ h3 {
   .site-footer .social-icons {
     text-align: center
   }
+}
+
+h1 a:hover {
+  color: rgb(171, 171, 171);
 }
