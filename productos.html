@@ -1,86 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="./img/Picsart_23-11-29_12-56-35-364.png" />
-  </head>
-  <body>
-    <header>
-      <a href="index.html" class="menu">
-        <img class="logo" src="img/Picsart_23-11-29_12-56-35-364.png" alt="Car Wash" />
-      </a>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="turnos.html">Turnos</a>
-        <a href="productos.html">Productos</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
-        
-
-      </nav>
-    </header>
-    <div class="scroll"></div>
-    <script src="app.js"></script>
-
-
-    <body>
+<head>
+<title>Productos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+ 
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="./img/Picsart_23-11-29_12-56-35-364.png" />
 <header id="header">
-<!-- place navbar here -->
-</header>
+  <a href="index.html" class="menu">
+         <img class="logo" src="img/Picsart_23-11-29_12-56-35-364.png" alt="Car Wash" />
+       </a>
+       <nav>
+         <a href="index.html">Inicio</a>
+         <a href="servicios.html">Servicios</a>
+         <a href="turnos.html">Turnos</a>
+         <a href="productos.html">Productos</a>
+         <a href="nosotros.html">Nosotros</a>
+         <a href="contacto.html">Contacto</a>
+       </nav>
+ </header>
+
+</head>
+
+<body>
+
 <main>
-<div id="app" class="container">
-<h1>Productos</h1>
-<br>
-<a class="btn btn-primary" href="../templates/producto_nuevo.html">Nuevo</a>
-<br><br>
-<div v-if="error">
-<p>Lo sentimos , ........</p>
-</div>
-<div v-else>
-<section v-if="cargando">
-<div class="spinner-border"></div>
-<p>Cargando .....</p>
-</section>
-<section v-else>
-<div class="table-responsive">
-<table class="table table-bordered">
-<thead>
-<tr>
-<th scope="col">Id</th>
-<th scope="col">Nombre</th>
-<th scope="col">Precio</th>
-<th scope="col">Stock</th>
-<th scope="col">Imagen</th>
-<th scope="col">Acciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="" v-for="producto in productos">
-<td scope="row">{{producto.id}}</td>
-<td>{{producto.nombre}}</td>
-<td>{{producto.precio}}</td>
-<td>{{producto.stock}}</td>
-<td>
-<img width="60" :src="producto.imagen" :alt="producto.nombre">
-</td>
-<td>
-<a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
-<button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</div>
-</div>
-</main>
+  <div id="app" class="container">
+  <h1>Productos</h1>
+  <br>
+  <a class="btn btn-primary" href="./producto_nuevo.html">Nuevo</a>
+  <br><br>
+  <div v-if="error">
+  <p>Lo sentimos , ........</p>
+  </div>
+  <div v-else>
+  <section v-if="cargando">
+  <div class="spinner-border"></div>
+  <p>Cargando .....</p>
+  </section>
+  <section v-else>
+  <div class="table-responsive">
+  <table class="table table-bordered">
+  <thead>
+  <tr>
+  <th scope="col">Id</th>
+  <th scope="col">Nombre</th>
+  <th scope="col">Precio</th>
+  <th scope="col">Stock</th>
+  <th scope="col">Imagen</th>
+  <th scope="col">Acciones</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="" v-for="producto in productos">
+  <td scope="row">{{producto.id}}</td>
+  <td>{{producto.nombre}}</td>
+  <td>{{producto.precio}}</td>
+  <td>{{producto.stock}}</td>
+  <td>
+  <img width="60" :src="producto.imagen" :alt="producto.nombre">
+  </td>
+  <td>
+  <a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
+  <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </section>
+  </div>
+  </div>
+  </main>
 <footer>
-<!-- place footer here -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Acerca de</h6>
+          <p class="text-justify">
+            En Car Wash, nos enorgullecemos de ofrecer un servicio excepcional en el cuidado y lavado de automóviles. Con una trayectoria consolidada en el mercado, nos hemos comprometido a brindar una experiencia incomparable a nuestros clientes.<br>
+             Desde nuestros inicios, hemos perfeccionado nuestros métodos y técnicas para proporcionar un lavado de autos de alta calidad que resalta por su precisión y dedicación.
+
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li>
+              <a href="serviciodelimpieza.html">Servicio de Limpieza</a>
+            </li>
+            <li>
+              <a href="pulidodepintura.html"
+                >Pulido de Pintura</a
+              >
+            </li>
+            <li>
+              <a href="cuidadodecubiertas.html"
+                >Cuidado de Cubiertas</a
+              >
+            </li>
+            <li>
+              <a
+                href="mantenimiento.html"
+                >mantenimiento</a
+              >
+            </li>
+           
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Enlaces Rápidos</h6>
+          <ul class="footer-links">
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+          
+              <a href="#"
+                >Politica de Privacidad</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; 2023 Todos los derechos reservados.
+            <a href="index.html">Car Wash</a>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
 </footer>
 <script>
 <!--Link de Bootstrap-->
@@ -90,77 +153,11 @@ crossorigin="anonymous"</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 crossorigin="anonymous"></script>
-<script src="../js/main.js"></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-<script src="../js/productos.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./js/productos.js"></script>
+
+
+    
 </body>
-
-    <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h6>Acerca de</h6>
-              <p class="text-justify">
-                En Car Wash, nos enorgullecemos de ofrecer un servicio excepcional en el cuidado y lavado de automóviles. Con una trayectoria consolidada en el mercado, nos hemos comprometido a brindar una experiencia incomparable a nuestros clientes.<br>
-                 Desde nuestros inicios, hemos perfeccionado nuestros métodos y técnicas para proporcionar un lavado de autos de alta calidad que resalta por su precisión y dedicación.
-
-              </p>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-              <h6>Categorias</h6>
-              <ul class="footer-links">
-                <li>
-                  <a href="serviciodelimpieza.html">Servicio de Limpieza</a>
-                </li>
-                <li>
-                  <a href="pulidodepintura.html"
-                    >Pulido de Pintura</a
-                  >
-                </li>
-                <li>
-                  <a href="cuidadodecubiertas.html"
-                    >Cuidado de Cubiertas</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="mantenimiento.html"
-                    >mantenimiento</a
-                  >
-                </li>
-               
-              </ul>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-              <h6>Enlaces Rápidos</h6>
-              <ul class="footer-links">
-                <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-              
-                  <a href="#"
-                    >Politica de Privacidad</a
-                  >
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <hr />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">
-                Copyright &copy; 2023 Todos los derechos reservados.
-                <a href="index.html">Car Wash</a>.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>
