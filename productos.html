@@ -10,23 +10,28 @@
  
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" type="image/png" href="./img/Picsart_23-11-29_12-56-35-364.png" />
-<header id="header">
-  <a href="index.html" class="menu">
-         <img class="logo" src="img/Picsart_23-11-29_12-56-35-364.png" alt="Car Wash" />
-       </a>
-       <nav>
-         <a href="index.html">Inicio</a>
-         <a href="servicios.html">Servicios</a>
-         <a href="turnos.html">Turnos</a>
-         <a href="productos.html">Productos</a>
-         <a href="nosotros.html">Nosotros</a>
-         <a href="contacto.html">Contacto</a>
-       </nav>
- </header>
+
 
 </head>
 
 <body>
+  <header>
+    <a href="index.html" class="menu">
+      <img class="logo" src="img/Picsart_23-11-29_12-56-35-364.png" alt="Car Wash" />
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="turnos.html">Turnos</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      
+
+    </nav>
+  </header>
+  <div class="scroll"></div>
+  <script src="app.js"></script>
 
 <main>
   <div id="app" class="container">
@@ -35,12 +40,12 @@
   <a class="btn btn-primary" href="./producto_nuevo.html">Nuevo</a>
   <br><br>
   <div v-if="error">
-  <p>Lo sentimos , ........</p>
+ 
   </div>
   <div v-else>
   <section v-if="cargando">
   <div class="spinner-border"></div>
-  <p>Cargando .....</p>
+
   </section>
   <section v-else>
   <div class="table-responsive">
