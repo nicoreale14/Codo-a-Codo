@@ -10,7 +10,7 @@ createApp({
       imagen: "",
       stock: 0,
       precio: 0,
-      url: "https://comision23541.pythonanywhere.com/productos/" + id,
+      url: "https://nicoreale.pythonanywhere.com/productos/" + id,
     };
   },
   methods: {
